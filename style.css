@@ -1,28 +1,40 @@
-#red {
-    color: red;
+body {
+    background-color: black;
 }
 
-#blue {
-    color: blue;
-}
-
-#orange {
-    color: orange;
-}
-
-#green {
-    color: green;
-}
-
-#yellow {
-    color: yellow;
-}
-
-.color-title {
-    font-weight: normal;
+div {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    text-align: center;
 }
 
 img {
-    height: 200px;
-    width: 200px;
+    border: 5px solid white;
+    width: 100%;
 }
+
+h1 {
+    margin: 0px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
