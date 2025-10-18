@@ -31,9 +31,33 @@
     </p>
 </html>
 
-<footer style="background-color: red; text-align: center; height: 200px;">
-    <a href="about.html">
+<footer style="background-color: red; text-align: center; height: 100px;">
+  <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100px; width: 100%;">
+    <div style="height: 50px; width: 150px; background-color: rgb(173, 216, 230); display: flex; align-items: center; justify-content: center; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <a href="about.html" style="display: block; text-align: center; height: 100%; width: 100%; display: flex; align-items: center; justify-content: center; text-decoration: none; color: black; font-weight: bold; border-radius: 10px; transition: all 0.1s; transform: translateY(0); box-shadow: inset 0 2px 4px rgba(255,255,255,0.2), 0 2px 4px rgba(0,0,0,0.2);" 
+         id="aboutButton">
         About Me
-    </a>
+      </a>
+    </div>
+  </div>
 </footer>
+
+<script>
+  const button = document.getElementById('aboutButton');
+  
+  button.addEventListener('mousedown', function() {
+    this.style.transform = 'translateY(2px)';
+    this.style.boxShadow = 'inset 0 1px 2px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.2)';
+  });
+  
+  button.addEventListener('mouseup', function() {
+    this.style.transform = 'translateY(0)';
+    this.style.boxShadow = 'inset 0 2px 4px rgba(255,255,255,0.2), 0 2px 4px rgba(0,0,0,0.2)';
+  });
+  
+  button.addEventListener('mouseleave', function() {
+    this.style.transform = 'translateY(0)';
+    this.style.boxShadow = 'inset 0 2px 4px rgba(255,255,255,0.2), 0 2px 4px rgba(0,0,0,0.2)';
+  });
+</script>
 </html>
